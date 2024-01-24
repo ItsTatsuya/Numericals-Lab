@@ -2,5 +2,3 @@
 
 ## Contents
 * [Bisection Method](/BisectionMethod/)
-
-[image](/BisectionMethod/bisection.png)
