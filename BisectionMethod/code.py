@@ -1,30 +1,34 @@
 import math
 
 def bisect(f, a, b, absolute_error):
+    iterations = 0
     if f(a) * f(b) > 0:
-        return None
+        return None,iterations
     while (b - a) / 2 > absolute_error:
+        iterations += 1
         c = (a + b) / 2
         if abs(f(c)) < absolute_error:
-            return c
+            return c,iterations
         elif f(b) * f(c) < 0:
             a, b = c, b
         else:
             a, b = a, c
 
-    return (a + b) / 2
-function = input("Enter function: ")
-f = lambda x: eval(function)
-a = int(input("Enter a: "))
-b = int(input("Enter b: "))
+    return ((a + b) / 2),iterations
 
-absolute_error = float(input("Enter absolute error: "))
+if __name__ == "__main__":
+    function = input("Enter function: ")
+    f = lambda x: eval(function)
+    a = int(input("Enter a: "))
+    b = int(input("Enter b: "))
 
-root = bisect(f, a, b, absolute_error)
-if root is None:
-    print("\nRoot not found. Try again with different values.")
-else:
-    print("\nRoot: ", root)
-    print("f(root): ", f(root))
+    absolute_error = float(input("Enter absolute error: "))
+
+    root,itera = bisect(f, a, b, absolute_error)
+    if root is None:
+        print("\nRoot not found. Try again with different values.")
+    else:
+        print("\nRoot: ", root)
+        print("Iterations: ", itera)
 
 
