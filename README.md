@@ -9,8 +9,8 @@
   - [x] [Gauss Seidel Method](/GaussSeidelMethod/)
   
 - **Cycle 2**
-  - [x] [Newton Forward Interpolation](NewtonForwardInterpolation/)
-  - [ ] [Lagrange Interpolation]
+  - [x] [Newton Interpolation](NewtonInterpolation/)
+  - [x] [Lagrange Interpolation](LagrangeInterpolation/)
   - [ ] [Simson's 1/3 Rule]
   - [ ] [Simson's 3/8 Rule]
   - [ ] [Trapezoidal Rule]
