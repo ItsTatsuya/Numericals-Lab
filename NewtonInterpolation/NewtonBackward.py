@@ -16,6 +16,8 @@ def newton_backward_interpolation(x, y, value):
             y_diff[i][j] = y_diff[i-1][j] - y_diff[i-1][j+1]
     result = y0
     for i in range(1, n):
-        result += (u-i+1) * y_diff[i][n-i-1] / fact(i)
+        product = 1
+        for j in range(i):
+            product *= (u + j)
+        result += product * y_diff[i][0] / fact(i)
     return result
-
