@@ -11,7 +11,7 @@
 - **Cycle 2**
   - [x] [Newton Interpolation](NewtonInterpolation/)
   - [x] [Lagrange Interpolation](LagrangeInterpolation/)
-  - [ ] [Simson's 1/3 Rule]
-  - [ ] [Simson's 3/8 Rule]
+  - [x] [Simson's 1/3 Rule](Simson-onethird/)
+  - [x] [Simson's 3/8 Rule](Simson-threeeighth/)
   - [ ] [Trapezoidal Rule]
   - [ ] [Euler's Method]
